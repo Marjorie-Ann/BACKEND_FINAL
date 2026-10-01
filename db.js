@@ -1,6 +1,6 @@
-import mysql from 'mysql2/promise.js'
+import mysql from 'mysql2/promise.js';
 
-const db = mysql.createConnection({
+const pool = mysql.createPool({
   host: "localhost",
   user: "root",
   password: "",
